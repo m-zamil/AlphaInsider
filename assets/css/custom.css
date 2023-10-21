@@ -1,0 +1,236 @@
+/* ============== Bootstrap Overrides ============== */
+
+:root {
+  --light: #edeff4;
+  --dark: #002f4b;
+  --slate-grey: #6f78a7;
+  --primary: #576ddb;
+  --secondary: #1b2764;
+  --green: #0da878;
+  --font-family-roboto-slab: 'Roboto Slab', serif;
+  --font-family-open-sans: 'Open Sans', sans-serif;
+}
+body {
+  color: var(--secondary);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-family-roboto-slab);
+  font-weight: bold;
+}
+h4 {
+  font-size: 1.25rem;
+}
+p {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+.text-dark {
+  color: var(--dark);
+}
+.text-success {
+  color: var(--green) !important;
+}
+
+.bg-light {
+  background-color: var(--light) !important;
+}
+.text-secondary {
+  color: var(--secondary) !important;
+}
+.btn-primary,
+.btn-primary:hover {
+  color: white;
+  background-color: var(--primary);
+  border-color: var(--primary);
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+}
+.form-control,
+.form-control:focus {
+  font-weight: 600;
+  color: var(--slate-grey);
+  background-color: #f4f5f8;
+  box-shadow: 0px 4px 21px 0px #d7dbe8 inset;
+  border-radius: 10px;
+  display: block;
+  border: 0;
+  position: relative;
+  z-index: 2;
+}
+.form-control::placeholder {
+  color: inherit;
+}
+
+/* ============= Custom Utilities =============== */
+.bold {
+  font-weight: bold;
+}
+
+.text-slate {
+  color: var(--slate-grey);
+}
+.text-small {
+  font-size: 60%;
+}
+.hr {
+  margin: 24px 0;
+  height: 2px;
+  background-color: var(--light);
+}
+.fs-4 {
+  font-size: 1rem;
+}
+.fs-6 {
+  font-size: 0.75rem;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.zindex-2 {
+  z-index: 2;
+}
+/* =============== Homepage Styles =============== */
+
+.title {
+  font-size: 2rem;
+  line-height: 1.15;
+}
+
+/* ========= Hero Section ========= */
+.hero {
+  border: 3px solid var(--light);
+  border-radius: 20px;
+  width: 90%;
+  margin-bottom: 96px;
+}
+
+.hero__bg {
+  left: -3px;
+  right: 0;
+  border-radius: 17px 17px 0 0;
+  border: 3px solid var(--light);
+  height: 200px;
+}
+
+.stats__number {
+  font-family: var(--font-family-roboto-slab);
+  font-size: 1.5rem;
+}
+.note {
+  background-image: url('../images/note-bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+  border-radius: 20px 20px 0 0;
+}
+.note::before {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url(../images/tick-icon.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 0.25em;
+  position: relative;
+  top: 3px;
+}
+.signup-wrapper {
+  box-shadow: 0px 42px 49px #e1e5ee;
+  border-radius: 21px;
+  background-color: white;
+  overflow: hidden;
+}
+
+.signup-form {
+  position: relative;
+}
+.signup-form::after {
+  content: '';
+  display: block;
+  height: 210px;
+  position: absolute;
+  pointer-events: none;
+  background: linear-gradient(180deg, #eaecf1 0%, rgba(234, 236, 241, 0) 61.28%);
+  opacity: 0.44;
+  top: 0;
+  left: -48px;
+  right: -48px;
+  z-index: 0;
+}
+.btn-wrapper {
+  position: relative;
+}
+.btn-wrapper::after {
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  left: -48px;
+  right: -48px;
+  top: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, #eaecf1 0%, rgba(234, 236, 241, 0) 61.28%);
+  opacity: 0.44;
+  z-index: 0;
+}
+
+@media (min-width: 768px) {
+  h4 {
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 1rem;
+  }
+  .fs-4 {
+    font-size: 1.25rem;
+  }
+  .hero__bg {
+    height: 386px;
+  }
+  .title {
+    font-size: 3.5rem;
+  }
+
+  .stats__number {
+    font-size: 3rem;
+  }
+  .signup-bg {
+    position: relative;
+    z-index: 1;
+  }
+  .signup-bg::before,
+  .signup-bg::after {
+    content: '';
+    position: absolute;
+    stroke-width: 2px;
+    stroke: #ededed;
+    filter: drop-shadow(0px 42px 49px #e1e5ee);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  .signup-bg::after {
+    width: 174px;
+    height: 300px;
+    right: -11px;
+    top: 54px;
+
+    background-image: url(../images/bg-2.svg);
+    background-position: right center;
+  }
+  .signup-bg::before {
+    width: 455px;
+    height: 223px;
+    left: -8px;
+    top: 54px;
+    background-image: url(../images/bg-1.svg);
+    background-position: right center;
+  }
+}
