@@ -107,9 +107,10 @@ p {
 /* ========= Hero Section ========= */
 .hero {
   border: 3px solid var(--light);
-  border-radius: 20px;
+  border-radius: 20px 20px 0 0;
   width: 90%;
-  margin-bottom: 96px;
+  max-width: 1360px;
+  margin-bottom: 24px;
 }
 
 .hero__bg {
@@ -175,6 +176,9 @@ p {
   right: -48px;
   z-index: 0;
 }
+.signup-btn {
+  max-width: 300px;
+}
 .btn-wrapper {
   position: relative;
 }
@@ -192,7 +196,7 @@ p {
   z-index: 0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   h4 {
     font-size: 1.5rem;
   }
@@ -202,44 +206,33 @@ p {
   .fs-4 {
     font-size: 1.25rem;
   }
+  .hero {
+    margin-bottom: 96px;
+    border-radius: 20px;
+  }
   .hero__bg {
     height: 386px;
   }
   .title {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
-
   .stats__number {
     font-size: 3rem;
   }
-  .signup-bg {
-    position: relative;
-    z-index: 1;
-  }
-  .signup-bg::before,
-  .signup-bg::after {
-    content: '';
+  .signup-container {
     position: absolute;
-    stroke-width: 2px;
-    stroke: #ededed;
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    z-index: -1;
+    top: 0;
+    right: 40px;
   }
-  .signup-bg::after {
-    width: 174px;
-    height: 300px;
-    right: -11px;
-    top: 54px;
-    background-image: url(../images/bg-2.svg);
-    background-position: right center;
+  .signup-wrapper {
+    max-width: 443px;
   }
-  .signup-bg::before {
-    width: 455px;
-    height: 223px;
-    left: -8px;
-    top: 54px;
-    background-image: url(../images/bg-1.svg);
-    background-position: right center;
+}
+@media (min-width: 1140px) {
+  .title {
+    font-size: 3.5rem;
+  }
+  .signup-container {
+    right: unset;
   }
 }
