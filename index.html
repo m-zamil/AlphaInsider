@@ -19,7 +19,9 @@
   </head>
   <body>
     <section class="hero mt-4 mx-auto position-relative">
-      <div class="hero__bg position-absolute bg-light"></div>
+      <div class="hero__bg position-absolute bg-light">
+        <video class="video" mute autoplay loop src="./assets/video-bg.mp4" poster="./assets/images/video-background-poster.jpeg"></video>
+      </div>
       <div class="container">
         <div class="row">
           <div class="col-lg-6 offset-lg-1">
@@ -63,14 +65,14 @@
             </div>
           </div>
           <div class="col-lg-5 pb-3 pb-lg-5 mb-n5 signup-bg">
-            <div class="signup-wrapper px-4 px-lg-5 pt-4 pt-lg-5 mt-5 mt-lg-4 mb-n5">
+            <div class="signup-wrapper px-4 px-lg-5 pt-4 pt-lg-5 mt-4 mt-lg-4 mb-n5">
               <h4 class="text-uppercase bold">
                 Deploy Your <br />
                 own trading bot <br />
                 In 30 Minutes
               </h4>
               <p class="text-slate mt-3">No Coding or Trading Experience Needed</p>
-              <form class="signup-form mt-4 mt-lg-5 pt-4 pt-lg-5">
+              <form class="signup-form mt-4 mt-lg-5 pt-4 pt-lg-5 d-none d-lg-block">
                 <div class="mb-3">
                   <input type="text" class="form-control h-100 py-3 px-4" placeholder="First Name" />
                 </div>
@@ -90,6 +92,9 @@
                   <button type="submit" class="btn btn-block btn-lg btn-primary bold fs-4 text-uppercase position-relative zindex-2">SIGN UP</button>
                 </div>
               </form>
+              <div class="signup-btn d-lg-none pb-4">
+                <a href="#" class="btn btn-block btn-lg btn-primary bold fs-4 text-uppercase position-relative zindex-2">SIGN UP</a>
+              </div>
             </div>
           </div>
         </div>
