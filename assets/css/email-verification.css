@@ -14,7 +14,11 @@
   border: 0;
 }
 .card-wrapper {
-  background-color: #fff;
+  background-color: transparent;
+  background-image: url(../images/curve-bg.svg);
+  background-size: cover;
+  background-position: center top;
+  padding-top: 16x;
   stroke-width: 1px;
   stroke: var(--light);
   box-shadow: 0px 19px 49px #dee2ec;
