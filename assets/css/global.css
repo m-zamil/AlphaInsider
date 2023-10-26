@@ -78,9 +78,12 @@ p {
 .bold {
   font-weight: bold;
 }
+.underline {
+  text-decoration: underline;
+}
 
 .text-slate {
-  color: var(--slate-grey);
+  color: var(--slate-grey) !important;
 }
 .text-small {
   font-size: 60%;
