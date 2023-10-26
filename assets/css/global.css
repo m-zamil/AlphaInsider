@@ -13,6 +13,7 @@
 }
 body {
   color: var(--secondary);
+  font-family: var(--font-family-open-sans);
 }
 
 h1,

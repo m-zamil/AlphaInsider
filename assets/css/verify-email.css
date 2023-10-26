@@ -16,7 +16,7 @@
 .card-wrapper {
   background-color: #fff;
   stroke-width: 1px;
-  stroke: #edeff4;
+  stroke: var(--light);
   box-shadow: 0px 19px 49px #dee2ec;
   border-radius: 18px;
 }
@@ -29,8 +29,8 @@
 }
 .email__icon {
   background-color: #fff;
-  filter: drop-shadow(0px 19px 49px #dee2ec);
-  outline: 4px solid #edeff4;
+  box-shadow: 0px 19px 49px #dee2ec;
+  outline: 4px solid var(--light);
   border-radius: 50%;
 }
 

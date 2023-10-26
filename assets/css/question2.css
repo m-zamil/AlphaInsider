@@ -16,7 +16,7 @@
 .card-wrapper {
   background-color: #fff;
   stroke-width: 1px;
-  stroke: #edeff4;
+  stroke: var(--light);
   box-shadow: 0px 19px 49px #dee2ec;
   border-radius: 18px;
   position: relative;
@@ -26,7 +26,7 @@
   left: 0;
   background-color: white;
   border-radius: 5px;
-  border: 1px solid #edeff4;
+  border: 1px solid var(--light);
   background: #fff;
   box-shadow: 0px 19px 49px 0px #aebdd2;
   width: 40px;
@@ -44,10 +44,10 @@
 }
 .opt__table {
   border-radius: 6px;
-  border: 2px solid #edeff4;
+  border: 2px solid var(--light);
 }
 .opt__table .col:not(:last-child) {
-  border-bottom: 2px solid #edeff4;
+  border-bottom: 2px solid var(--light);
 }
 .opt__table .col {
   border-width: 2px;
@@ -73,11 +73,11 @@
   }
   .opt__table .col:not(:last-child) {
     border-bottom-width: 0;
-    border-right: 2px solid #edeff4;
+    border-right: 2px solid var(--light);
   }
 
   .opt-table__btn {
-    border-top: 2px solid #edeff4;
+    border-top: 2px solid var(--light);
     width: 100%;
     text-align: center;
     padding-top: 24px;
