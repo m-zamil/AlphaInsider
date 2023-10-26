@@ -50,13 +50,18 @@ p {
 .text-secondary {
   color: var(--secondary) !important;
 }
-.btn-primary,
-.btn-primary:hover {
+.btn-primary {
   color: white;
   background-color: var(--primary);
   border-color: var(--primary);
   border-radius: 10px;
   padding: 0.75rem 1rem;
+}
+.btn-primary:hover,
+.btn-primary:active {
+  color: white;
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
 }
 .form-control,
 .form-control:focus {
