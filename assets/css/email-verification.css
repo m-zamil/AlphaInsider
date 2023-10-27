@@ -9,19 +9,13 @@
   right: 0;
   top: 0;
   border-radius: 17px 17px 0 0;
-  border: 3px solid var(--light);
+  border: 3px solid var(--border);
   height: 200px;
   border: 0;
 }
 .card-wrapper {
-  background-color: transparent;
-  background-image: url(../images/curve-bg.svg);
-  background-size: cover;
-  background-position: center top;
-  padding-top: 16x;
-  stroke-width: 1px;
-  stroke: var(--light);
-  box-shadow: 0px 19px 49px #dee2ec;
+  background-color: white;
+  box-shadow: 0px 29px 39px #dee2ec;
   border-radius: 18px;
 }
 .email-icon-wrapper {
@@ -34,7 +28,7 @@
 .email__icon {
   background-color: #fff;
   box-shadow: 0px 19px 49px #dee2ec;
-  outline: 4px solid var(--light);
+  outline: 4px solid var(--border);
   border-radius: 50%;
 }
 

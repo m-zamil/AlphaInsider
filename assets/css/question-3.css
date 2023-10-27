@@ -9,15 +9,13 @@
   right: 0;
   top: 0;
   border-radius: 17px 17px 0 0;
-  border: 3px solid var(--light);
+  border: 3px solid var(--border);
   height: 200px;
   border: 0;
 }
 .card-wrapper {
   background-color: #fff;
-  stroke-width: 1px;
-  stroke: var(--light);
-  box-shadow: 0px 19px 49px #dee2ec;
+  box-shadow: 0px 29px 39px #dee2ec;
   border-radius: 18px;
   position: relative;
 }
@@ -26,7 +24,7 @@
   left: 0;
   background-color: white;
   border-radius: 5px;
-  border: 1px solid var(--light);
+  border: 1px solid var(--border);
   background: #fff;
   box-shadow: 0px 19px 49px 0px #aebdd2;
   width: 40px;
@@ -44,11 +42,20 @@
 }
 
 .deploy-border {
-  border-bottom: 4px solid var(--light);
+  border-bottom: 4px solid var(--border);
+}
+.calendly-wrapper {
+  width: 100%;
+  max-width: 325px;
+  transform: scale(0.8);
+  overflow-y: auto;
+  outline: 2px solid var(--border);
 }
 .calendly-inline-widget {
   max-width: 100%;
-  height: 510px;
+}
+.calendly-inline-widget iframe {
+  min-height: 600px;
 }
 
 @media (min-width: 992px) {
@@ -57,5 +64,12 @@
   }
   .hero__bg {
     height: 386px;
+  }
+  .deploy-border {
+    border-bottom: 0;
+    border-right: 4px solid var(--border);
+  }
+  .calendly-wrapper {
+    transform-origin: center 0;
   }
 }

@@ -1,5 +1,5 @@
 .hero {
-  border: 3px solid var(--light);
+  border: 3px solid var(--border);
   border-radius: 20px 20px 0 0;
   width: 90%;
   max-width: 1360px;
@@ -11,7 +11,7 @@
   right: -3px;
   top: -3px;
   border-radius: 16px 16px 0 0;
-  border: 3px solid var(--light);
+  border: 3px solid var(--border);
   height: 200px;
   border: 0;
 }
@@ -26,7 +26,7 @@
 .title {
   font-size: 2rem;
   line-height: 1.15;
-  color: var(--light);
+  color: white;
 }
 
 .stats__number {

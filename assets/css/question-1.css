@@ -9,15 +9,13 @@
   right: 0;
   top: 0;
   border-radius: 17px 17px 0 0;
-  border: 3px solid var(--light);
+  border: 3px solid var(--border);
   height: 200px;
   border: 0;
 }
 .card-wrapper {
   background-color: #fff;
-  stroke-width: 1px;
-  stroke: var(--light);
-  box-shadow: 0px 19px 49px #dee2ec;
+  box-shadow: 0px 29px 39px #dee2ec;
   border-radius: 18px;
   position: relative;
 }
@@ -26,7 +24,7 @@
   left: 0;
   background-color: white;
   border-radius: 5px;
-  border: 1px solid var(--light);
+  border: 1px solid var(--border);
   background: #fff;
   box-shadow: 0px 19px 49px 0px #aebdd2;
   width: 40px;
@@ -44,15 +42,15 @@
 }
 .optlist li {
   border-radius: 6px;
-  border: 2px solid var(--light);
+  border: 2px solid var(--border);
 }
 .optlist li a::before {
   content: '';
   display: inline-block;
-  width: 1.15em;
-  height: 1.15em;
+  width: 1.25em;
+  height: 1.25em;
   margin-right: 16px;
-  border: 2px solid var(--light);
+  border: 2px solid var(--border);
   border-radius: 50%;
   vertical-align: middle;
   flex-shrink: 0;
