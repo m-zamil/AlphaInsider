@@ -13,5 +13,5 @@ https://m-zamil.github.io/AlphaInsider/email-verification <br>
 https://m-zamil.github.io/AlphaInsider/question-1 <br>
 https://m-zamil.github.io/AlphaInsider/question-2 <br>
 https://m-zamil.github.io/AlphaInsider/question-3 <br>
-https://m-zamil.github.io/AlphaInsider/question-4
-
+https://m-zamil.github.io/AlphaInsider/question-4 <br>
+https://m-zamil.github.io/AlphaInsider/banner1
