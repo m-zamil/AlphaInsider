@@ -22,111 +22,141 @@
     <link rel="stylesheet" href="./css/account-pricing.css" />
   </head>
   <body>
-    <section class="pricing mt-4">
+    <section class="pricing mt-3">
       <div class="container">
-        <div class="row flex-center">
-          <div class="switch-wrapper switch-plan mb-2" id="planToggle">
-            <input id="standard" type="radio" name="plan" value="standard" checked />
-            <input id="pro" type="radio" name="plan" value="pro" />
-            <input id="premium" type="radio" name="plan" value="premium" />
-            <label for="standard">Standard</label>
-            <label for="pro">Pro</label>
-            <label for="premium">Premium</label>
-            <span class="highlighter"></span>
+        <div>
+          <div class="px-2 d-lg-none flex-center">
+            <div class="switch-wrapper switch-plan" id="planToggle">
+              <input id="standard" type="radio" name="plan" value="standard" checked />
+              <input id="pro" type="radio" name="plan" value="pro" />
+              <input id="premium" type="radio" name="plan" value="premium" />
+              <label for="standard">Standard</label>
+              <label for="pro">Pro</label>
+              <label for="premium">Premium</label>
+              <span class="highlighter"></span>
+            </div>
+          </div>
+          <div class="px-2 d-lg-none flex-center">
+            <div class="switch-wrapper switch-pricing" id="pricingToggle">
+              <input id="monthly" type="radio" name="pricing" value="monthly" checked />
+              <input id="yearly" type="radio" name="pricing" value="yearly" />
+              <label for="monthly" class="flex-center">Monthly</label>
+              <label for="yearly" class="lh-1">
+                <span class="fs-4">Yearly</span><br />
+                <small class="fs-5 font-weight-bold w-50"><span>Save</span> <span class="text-success">16%</span></small>
+              </label>
+              <span class="highlighter"></span>
+            </div>
           </div>
         </div>
-        <div class="row flex-center mb-4">
-          <div class="switch-wrapper switch-pricing" id="pricingToggle">
-            <input id="monthly" type="radio" name="pricing" value="monthly" checked />
-            <input id="yearly" type="radio" name="pricing" value="yearly" />
-            <label for="monthly">monthly</label>
-            <label for="yearly">yearly</label>
-            <span class="highlighter"></span>
-          </div>
-        </div>
+
         <div class="row my-3">
           <div class="col-12 col-xl-4 mb-3 pricing-plan active" class="pricing-plan" id="standardCard">
             <div class="card mx-3 mx-lg-0">
               <div class="standard-img-head text-center bg-warning text-white py-5">
-                <h1 class="card-heading">Standard</h1>
+                <h1 class="card-heading mt-n4 mb-0">Standard</h1>
               </div>
               <div class="d-flex justify-content-center mt-n4">
-                <div class="d-inline-flex flex-column text-center bg-white border border-warning rounded p-3 mt-n3">
-                  <h5 class="card-title text-warning m-0">FREE</h5>
+                <div class="d-inline-flex flex-column text-center bg-white border border-warning rounded px-3 py-2 mt-n3">
+                  <h5 class="card-title text-warning m-0" font-we>FREE</h5>
                   <h6 class="card-subtitle text-muted m-0">per month</h6>
                 </div>
               </div>
-              <div class="card-body text-center pt-1">
-                <p class="mb-0 mt-2 text-muted font-weight-normal mx-5 mb-2 my-3 text-center font-italic">
-                  Best for investors interested in real-time trade alerts <span><br /><br /></span>
-                </p>
+              <div class="card-body px-3 text-center pt-1 pb-3">
+                <p class="mx-3 my-2 text-muted font-weight-normal text-center font-italic">Best for investors interested in real-time trade alerts</p>
                 <ul class="list-group list-group-flush pricing-list">
-                  <li class="list-group-item"><i class="fas fa-times text-danger h5 mb-0 mr-2 align-middle"></i> Autotrade Crypto Strategies</li>
-                  <li class="list-group-item"><i class="fas fa-times text-danger h5 mb-0 mr-2 align-middle"></i> Autotrade Stock Strategies</li>
-                  <li class="list-group-item"><i class="fas fa-times text-danger h5 mb-0 mr-2 align-middle"></i> Real-Time Data</li>
-                  <li class="list-group-item"><i class="fas fa-times text-danger h5 mb-0 mr-2 align-middle"></i> Private Strategies</li>
-                  <li class="list-group-item"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Track Top Performing Strategies</li>
-                  <li class="list-group-item"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Trade Alerts On Up To 10 Strategies</li>
-                  <li class="list-group-item"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Add & Track Your Own Strategies</li>
-                  <li class="list-group-item"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> List Your Strategies On The Marketplace</li>
-                  <li class="list-group-item">&nbsp;</li>
+                  <li class="list-group-item px-2 py-2"><i class="fas fa-times text-danger h5 mb-0 mr-2 align-middle"></i> Autotrade Crypto Strategies</li>
+                  <li class="list-group-item px-2 py-2"><i class="fas fa-times text-danger h5 mb-0 mr-2 align-middle"></i> Autotrade Stock Strategies</li>
+                  <li class="list-group-item px-2 py-2"><i class="fas fa-times text-danger h5 mb-0 mr-2 align-middle"></i> Real-Time Data</li>
+                  <li class="list-group-item px-2 py-2"><i class="fas fa-times text-danger h5 mb-0 mr-2 align-middle"></i> Private Strategies</li>
+                  <li class="list-group-item px-2 py-2"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Track Top Performing Strategies</li>
+                  <li class="list-group-item px-2 py-2"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Trade Alerts On Up To 10 Strategies</li>
+                  <li class="list-group-item px-2 py-2"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Add & Track Your Own Strategies</li>
+                  <li class="list-group-item px-2 py-2"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> List Your Strategies On The Marketplace</li>
+                  <li class="list-group-item px-2 py-2">&nbsp;</li>
                 </ul>
               </div>
-              <div class="px-4 pb-4"><button type="button" disabled="disabled" class="btn btn-outline-warning btn-lg btn-block">Current Plan</button></div>
+              <div class="px-4 pb-3"><button type="button" disabled="disabled" class="btn btn-outline-warning btn-lg btn-block">Current Plan</button></div>
             </div>
           </div>
           <div class="col-12 col-xl-4 mb-3 pricing-plan" id="proCard">
             <div class="card mx-3 mx-lg-0">
-              <div class="pro-img-head text-center bg-success text-white py-5"><h1 class="card-heading">Pro</h1></div>
+              <div class="pro-img-head text-center bg-success text-white py-5">
+                <h1 class="card-heading mt-n4 mb-0">Pro</h1>
+              </div>
               <div class="d-flex justify-content-center mt-n4">
-                <div class="d-inline-flex flex-column text-center bg-white border border-success rounded p-3 mt-n3">
-                  <h5 class="card-title text-success m-0 pricing-monthly active">$50</h5>
-                  <h5 class="card-title text-success m-0 pricing-yearly">$45</h5>
-                  <h6 class="card-subtitle text-muted m-0">per month</h6>
+                <div class="d-inline-flex flex-column text-center bg-white border border-success rounded px-3 py-2 mt-n3">
+                  <div class="pricing-monthly active">
+                    <h5 class="card-title text-info m-0 font-we">$50</h5>
+                    <h6 class="card-subtitle text-muted m-0 lh-1">
+                      per month <br />
+                      <span class="text-small"> (billed monthly)</span>
+                    </h6>
+                  </div>
+                  <div class="pricing-yearly">
+                    <h5 class="card-title text-info m-0 font-we">$42</h5>
+                    <h6 class="card-subtitle text-muted m-0 lh-1">
+                      per month <br />
+                      <span class="text-small"> (billed yearly)</span>
+                    </h6>
+                  </div>
                 </div>
               </div>
-              <div class="card-body text-center pt-1">
-                <p class="mb-0 mt-2 text-muted font-weight-normal mx-5 mb-2 my-3 text-center font-italic">Best for investors allocating less than $25,000 to automated trading strategies</p>
+              <div class="card-body px-3 text-center pt-1 pb-3">
+                <p class="mx-3 my-2 text-muted font-weight-normal text-center font-italic">Best for investors allocating less than $25,000 to automated trading strategies</p>
                 <ul class="list-group list-group-flush pricing-list">
-                  <li class="list-group-item"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Autotrade Crypto Strategies</li>
-                  <li class="list-group-item"><i class="fas fa-times text-danger h5 mb-0 mr-2 align-middle"></i> Autotrade Stock Strategies</li>
-                  <li class="list-group-item"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Real-Time Data</li>
-                  <li class="list-group-item"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Track Top Performing Strategies</li>
-                  <li class="list-group-item"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Add & Track Your Own Strategies</li>
-                  <li class="list-group-item"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Autotrade Your Own Strategy</li>
-                  <li class="list-group-item"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Private Strategies</li>
-                  <li class="list-group-item"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> List Your Strategies On The Marketplace</li>
-                  <li class="list-group-item"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Priority Customer Support</li>
+                  <li class="list-group-item px-2 py-2"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Autotrade Crypto Strategies</li>
+                  <li class="list-group-item px-2 py-2"><i class="fas fa-times text-danger h5 mb-0 mr-2 align-middle"></i> Autotrade Stock Strategies</li>
+                  <li class="list-group-item px-2 py-2"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Real-Time Data</li>
+                  <li class="list-group-item px-2 py-2"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Track Top Performing Strategies</li>
+                  <li class="list-group-item px-2 py-2"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Add & Track Your Own Strategies</li>
+                  <li class="list-group-item px-2 py-2"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Autotrade Your Own Strategy</li>
+                  <li class="list-group-item px-2 py-2"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Private Strategies</li>
+                  <li class="list-group-item px-2 py-2"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> List Your Strategies On The Marketplace</li>
+                  <li class="list-group-item px-2 py-2"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Priority Customer Support</li>
                 </ul>
               </div>
-              <div class="px-4 pb-4"><button type="button" class="btn btn-success btn-lg btn-block text-white">Upgrade</button></div>
+              <div class="px-4 pb-3"><button type="button" class="btn btn-success btn-lg btn-block text-white">Upgrade</button></div>
             </div>
           </div>
           <div class="col-12 col-xl-4 mb-3 pricing-plan" id="premiumCard">
             <div class="card mx-3 mx-lg-0">
-              <div class="premium-img-head text-center bg-info text-white py-5"><h1 class="card-heading">Premium</h1></div>
+              <div class="premium-img-head text-center bg-info text-white py-5">
+                <h1 class="card-heading mt-n4 mb-0">Premium</h1>
+              </div>
               <div class="d-flex justify-content-center mt-n4">
-                <div class="d-inline-flex flex-column text-center bg-white border border-info rounded p-3 mt-n3">
-                  <h5 class="card-title text-info m-0 pricing-monthly active">$100</h5>
-                  <h5 class="card-title text-info m-0 pricing-yearly">$90</h5>
-                  <h6 class="card-subtitle text-muted m-0">per month</h6>
+                <div class="d-inline-flex flex-column text-center bg-white border border-info rounded px-3 py-2 mt-n3">
+                  <div class="pricing-monthly active">
+                    <h5 class="card-title text-info m-0" font-we>$100</h5>
+                    <h6 class="card-subtitle text-muted m-0 lh-1">
+                      per month <br />
+                      <span class="text-small"> (billed monthly)</span>
+                    </h6>
+                  </div>
+                  <div class="pricing-yearly">
+                    <h5 class="card-title text-info m-0 font-we">$84</h5>
+                    <h6 class="card-subtitle text-muted m-0 lh-1">
+                      per month <br />
+                      <span class="text-small"> (billed yearly)</span>
+                    </h6>
+                  </div>
                 </div>
               </div>
-              <div class="card-body text-center pt-1">
-                <p class="mb-0 mt-2 text-muted font-weight-normal mx-5 mb-2 my-3 text-center font-italic">Best for investors allocating more than $25,000 to automated trading strategies</p>
+              <div class="card-body px-3 text-center pt-1 pb-3">
+                <p class="mx-3 my-2 text-muted font-weight-normal text-center font-italic">Best for investors allocating more than $25,000 to automated trading strategies</p>
                 <ul class="list-group list-group-flush pricing-list">
-                  <li class="list-group-item"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Autotrade Crypto Strategies</li>
-                  <li class="list-group-item"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Autotrade Stock Strategies</li>
-                  <li class="list-group-item"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Real-Time Data</li>
-                  <li class="list-group-item"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Track Top Performing Strategies</li>
-                  <li class="list-group-item"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Add & Track Your Own Strategies</li>
-                  <li class="list-group-item"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Autotrade Your Own Strategy</li>
-                  <li class="list-group-item"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Private Strategies</li>
-                  <li class="list-group-item"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> List Your Strategies On The Marketplace</li>
-                  <li class="list-group-item"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Priority Customer Support</li>
+                  <li class="list-group-item px-2 py-2"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Autotrade Crypto Strategies</li>
+                  <li class="list-group-item px-2 py-2"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Autotrade Stock Strategies</li>
+                  <li class="list-group-item px-2 py-2"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Real-Time Data</li>
+                  <li class="list-group-item px-2 py-2"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Track Top Performing Strategies</li>
+                  <li class="list-group-item px-2 py-2"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Add & Track Your Own Strategies</li>
+                  <li class="list-group-item px-2 py-2"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Autotrade Your Own Strategy</li>
+                  <li class="list-group-item px-2 py-2"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Private Strategies</li>
+                  <li class="list-group-item px-2 py-2"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> List Your Strategies On The Marketplace</li>
+                  <li class="list-group-item px-2 py-2"><i class="fas fa-check text-success h5 mb-0 mr-2 align-middle"></i> Priority Customer Support</li>
                 </ul>
               </div>
-              <div class="px-4 pb-4"><button type="button" class="btn btn-info btn-lg btn-block text-white">Upgrade</button></div>
+              <div class="px-4 pb-3"><button type="button" class="btn btn-info btn-lg btn-block text-white">Upgrade</button></div>
             </div>
           </div>
         </div>

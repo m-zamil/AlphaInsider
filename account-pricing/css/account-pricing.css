@@ -3,6 +3,7 @@
   --warning-rgb: 251, 188, 5;
   --info-rgb: 0, 138, 255;
 }
+
 .pricing {
   font-weight: 400;
 }
@@ -83,15 +84,21 @@
 }
 
 .switch-wrapper label {
-  font-size: 16px;
+  font-size: 12px;
+  font-size: 15px;
+  font-weight: 600;
   z-index: 1;
-  min-width: 100px;
-  line-height: 32px;
+  min-width: 90px;
+  line-height: 1.4;
+  padding: 4px 16px;
   cursor: pointer;
   border-radius: 30px;
   transition: color 0.25s ease-in-out;
   text-align: center;
   margin-bottom: 0;
+}
+.lh-1 {
+  line-height: 1 !important;
 }
 .switch-wrapper .highlighter {
   position: absolute;
@@ -107,7 +114,8 @@
   box-shadow: 0px 11px 20px 0px rgba(139, 146, 174, 0.54);
 }
 .switch-pricing {
-  transform: scale(0.75);
+  transform: scale(0.8363);
+  transform-origin: center;
 }
 .switch-pricing .highlighter {
   width: 50%;
@@ -116,6 +124,7 @@
 @media (max-width: 1200px) {
   .card-heading {
     font-size: calc(1.375rem + 1.5vw);
+    font-weight: 600;
   }
   .pricing-list {
     font-size: 0.75rem;
